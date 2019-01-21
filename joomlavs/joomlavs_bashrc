@@ -1,0 +1,3 @@
+joomlavs(){
+    sudo docker run -it --rm naoy/joomlavs "$@"
+    }
