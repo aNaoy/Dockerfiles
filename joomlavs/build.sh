@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# clone the last version of sqlmap repo
+# clone the last version of joomlavs repo
 git clone https://github.com/rastating/joomlavs.git
 
 # remove .git as it is big and unuseful in a immutable archtecture
