@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:latest
 MAINTAINER Yoan AGOSTINI <yoan@naoy.fr>
 RUN apk add --update python
 COPY sqlmap/ /sqlmap/
