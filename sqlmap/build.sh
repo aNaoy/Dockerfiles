@@ -10,7 +10,8 @@ rm -rf ./sqlmap/.git/
 cat > Dockerfile << _EOF_
 FROM alpine:latest
 MAINTAINER Yoan AGOSTINI <yoan@naoy.fr>
-RUN apk add --update python
+RUN apk update && apk add --update python python-dev gcc musl-dev postgresql-dev
+RUN pip install psycopg2
 COPY sqlmap/ /sqlmap/
 WORKDIR /sqlmap
 ENTRYPOINT ["python", "sqlmap.py"]
