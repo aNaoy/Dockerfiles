@@ -1,5 +1,3 @@
 sqlmap(){
-sudo docker run --rm -it \
-  -v /tmp/sqlmap:/root/.sqlmap/ \
-  naoy/sqlmap "$@"
+    docker run --rm -it -v /tmp/sqlmap:/root/.sqlmap/ naoy/sqlmap "$@"
 }
